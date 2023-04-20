@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <section>
+        <div id="titulo">
+            CALCULADORA DE IMC<p>
+        </div>
+        <div id="kg">
+            Digite o seu peso:<p>
+                <input type="range" name="range" id="rangekg"
+                min="0" max="230"><p>
+            Peso:
+            <div id="respeso"></div>
+        </div>
+        <p>
+        <div id="altura">
+            Digite o sua altura:<p>
+                <input type="range" name="range" id="rangealt" 
+                min="0" max="230"><p>
+            Altura:
+            <div id="resalt"></div>
+        </div>
+        <p>
+        <div id="buttao">
+            <button onclick="calcular()">
+                CALCULAR
+            </button>
+        </div>
+    <div id="imc"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

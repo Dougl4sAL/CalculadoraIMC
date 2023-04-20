@@ -1,0 +1,57 @@
+body{
+    background: rgb(15, 15, 15);
+    font: normal 14pt Arial;
+    padding: 40px;
+}
+section{
+    background: rgb(53, 51, 51);
+    width: 490px;
+    margin: auto;
+    padding: 75px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.568);
+}
+#kg,#altura, #imc {
+    background: rgb(73, 69, 69);
+    width: 400px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+    color: rgb(189, 186, 186);
+}
+button{
+    width: 150px;
+    margin: 5px 175px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-weight: 755;
+
+    background: rgb(15, 15, 15);
+    border:  rgb(15, 15, 15);
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+input{
+    margin: 0 auto;
+    width: 400px;
+    background: black;
+    height: 2px;
+    appearance: none; /*Tira a barra colorida atraz da bolinha*/
+    cursor: pointer;
+}
+#resalt, #respeso{
+    background: rgb(53, 51, 51);
+    width: 45px;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+#titulo{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(189, 186, 186);
+}
+#imc{
+    text-align: center;
+    color: rgb(255, 38, 0);
+}
