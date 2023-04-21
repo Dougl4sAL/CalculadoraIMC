@@ -2,20 +2,18 @@ let peso = document.getElementById('rangekg')
 let respeso = document.getElementById('respeso')
 let alt = document.getElementById('rangealt')
 let resalt = document.getElementById('resalt')
-let imcres = document.getElementById('imc')
+let imcres = document.querySelector('.imc')
 
 peso.oninput = () => {
     respeso.textContent = `Peso: ${peso.value} kg`
 
-    imcres.innerHTML = '' 
-    imcres.style.boxShadow = 'none' 
+    calcular()
 }
 
 alt.oninput = () => {
     resalt.textContent = `Altura: ${alt.value} cm`
-    
-    imcres.innerHTML = ''
-    imcres.style.boxShadow = 'none'
+
+    calcular()
 }
 
 function calcular() {
@@ -25,6 +23,8 @@ function calcular() {
     let imcsem = peso2 / (alt2 / 100) ** 2
     // toFixed(2) com duas casas decimais depois da virgula
     let imc = imcsem.toFixed(2)
+
+    imcres.classList.remove('esconder')
 
     if (imc < 18.5) {
         imcres.style.boxShadow = '0 0 5px rgb(236, 233, 57, 0.568)'

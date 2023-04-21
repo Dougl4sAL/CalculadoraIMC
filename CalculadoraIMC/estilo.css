@@ -31,7 +31,7 @@ section h1 {
 
 #kg,
 #altura,
-#imc {
+.imc {
     background: rgb(73, 69, 69);
     width: 400px;
     padding: 15px;
@@ -65,10 +65,10 @@ input {
     margin-bottom: 20px;
 }
 
-#imc {
+.imc {
     text-align: center;
 }
 
-/* .esconder {
+.esconder {
     display: none;
-} */
+}
