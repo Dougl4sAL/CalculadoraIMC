@@ -12,33 +12,34 @@
 
 <body>
     <section>
-        <div id="titulo">
-            <h1>CALCULADORA DE IMC</h1>
+        <h1>CALCULADORA DE IMC</h1>
+
+        <div class="container">
+            <div id="kg">
+
+                <p>Qual é o seu peso:</p>
+                <input type="range" name="range" id="rangekg" min="0" max="250">
+
+                <span>Peso:</span>
+
+                <div id="respeso"></div>
+            </div>
+
+            <div id="altura">
+
+                <p>Qual é a sua altura:</p>
+                <input type="range" name="range" id="rangealt" min="0" max="250">
+
+                <span>Altura:</span>
+
+                <div id="resalt"></div>
+            </div>
+
+            <div class="botao">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+            <div id="imc"></div>
         </div>
-        
-        <div id="kg">
-            <p>Digite o seu peso:</p>
-            <input type="range" name="range" id="rangekg" min="0" max="250">
-
-            <span>Peso:</span>
-
-            <div id="respeso"></div>
-        </div>
-
-        <div id="altura">
-            <p>Digite o sua altura:</p>
-            <input type="range" name="range" id="rangealt" min="0" max="250">
-            
-            <span>Altura:</span>
-
-            <div id="resalt"></div>
-        </div>
-
-        <div id="buttao">
-            <button onclick="calcular()">Calcular</button>
-        </div>
-
-        <div id="imc"></div>
     </section>
 
     <script src="script.js"></script>
