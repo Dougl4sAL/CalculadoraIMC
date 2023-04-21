@@ -7,35 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
     <section>
         <div id="titulo">
-            CALCULADORA DE IMC<p>
+            <h1>CALCULADORA DE IMC</h1>
         </div>
+        
         <div id="kg">
-            Digite o seu peso:<p>
-                <input type="range" name="range" id="rangekg"
-                min="0" max="230"><p>
-            Peso:
+            <p>Digite o seu peso:</p>
+            <input type="range" name="range" id="rangekg" min="0" max="250">
+
+            <span>Peso:</span>
+
             <div id="respeso"></div>
         </div>
-        <p>
+
         <div id="altura">
-            Digite o sua altura:<p>
-                <input type="range" name="range" id="rangealt" 
-                min="0" max="230"><p>
-            Altura:
+            <p>Digite o sua altura:</p>
+            <input type="range" name="range" id="rangealt" min="0" max="250">
+            
+            <span>Altura:</span>
+
             <div id="resalt"></div>
         </div>
-        <p>
+
         <div id="buttao">
-            <button onclick="calcular()">
-                CALCULAR
-            </button>
+            <button onclick="calcular()">Calcular</button>
         </div>
-    <div id="imc"></div>
+
+        <div id="imc"></div>
     </section>
 
     <script src="script.js"></script>
