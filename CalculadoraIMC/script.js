@@ -4,6 +4,8 @@ let alt = document.getElementById('rangealt')
 let resalt = document.getElementById('resalt')
 let imcres = document.querySelector('.imc')
 
+let resultado = document.querySelector('.resultado')
+
 peso.oninput = () => {
     respeso.textContent = `Peso: ${peso.value} kg`
 
@@ -27,20 +29,20 @@ function calcular() {
     imcres.classList.remove('esconder')
 
     if (imc < 18.5) {
-        imcres.style.boxShadow = '0 0 5px rgb(236, 233, 57, 0.568)'
-        imcres.style.color = 'rgb(236, 233, 57)'
+        // Deixa na cor amarela
         imcres.innerHTML = `IMC de ${imc} pontos; Peso Baixo.`
+        resultado.className = 'pesobaixo'
     } else if (imc < 25) {
-        imcres.style.boxShadow = '0 0 5px rgb(31, 223, 24, 0.568)'
-        imcres.style.color = 'rgb(31, 223, 24)'
+        // Deixa na cor verde
         imcres.innerHTML = `IMC de ${imc} pontos; Peso Normal.`
+        resultado.className = 'pesonormal'
     } else if (imc < 30) {
-        imcres.style.boxShadow = '0 0 5px rgb(214, 142, 7, 0.568)'
-        imcres.style.color = 'rgb(214, 142, 7)'
+        // Deixa na cor laranja
         imcres.innerHTML = `IMC de ${imc} pontos; Sobrepeso.`
+        resultado.className = 'pesoacima'
     } else {
-        imcres.style.boxShadow = '0 0 5px rgb(255, 38, 0, 0.568)'
-        imcres.style.color = 'rgb(255, 38, 0)'
+        // Deixa na cor vermelha
         imcres.innerHTML = `IMC de ${imc} pontos; Obesidade.`
+        resultado.className = 'pesoobesidade'
     }
 }

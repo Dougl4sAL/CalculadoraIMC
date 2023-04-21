@@ -72,3 +72,27 @@ input {
 .esconder {
     display: none;
 }
+
+.pesobaixo {
+    box-shadow: 0 0 5px rgb(236, 233, 57, 0.568);
+    color: rgb(236, 233, 57);
+    border-radius: 10px;
+}
+
+.pesonormal {
+    box-shadow: 0 0 5px rgb(31, 223, 24, 0.568);
+    color: rgb(31, 223, 24);
+    border-radius: 10px;
+}
+
+.pesoacima {
+    box-shadow: 0 0 5px rgb(214, 142, 7, 0.568);
+    color: rgb(214, 142, 7);
+    border-radius: 10px;
+}
+
+.pesoobesidade {
+    box-shadow: 0 0 5px rgb(255, 38, 0, 0.568);
+    color: rgb(255, 38, 0);
+    border-radius: 10px;
+}
